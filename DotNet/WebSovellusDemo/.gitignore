@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/WebSovellusDemo
+/WebSovellusDemo/bin/Debug/net7.0
+/WebSovellusDemo/obj
+/WebSovellusDemoTests/bin/Debug/net7.0
+/WebSovellusDemoTests/obj
