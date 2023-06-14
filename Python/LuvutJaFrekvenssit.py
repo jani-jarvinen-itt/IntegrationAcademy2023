@@ -1,13 +1,13 @@
 luvut = []
-frekvenssit = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+frekvenssit = [0] * 10
 
 while True:
-    syöte = input("Syötä luku 1-99 tai nolla lopettaaksesi: ")
-    if syöte == "0":
+    syöte = int(input("Syötä luku 1-99 tai nolla lopettaaksesi: "))
+    if syöte == 0:
         break
-    luvut.append(int(syöte))
+    luvut.append(syöte)
 
-    lukualue = int(syöte) // 10
+    lukualue = syöte // 10
     frekvenssit[lukualue] += 1
 
 print("Luvut syötetty.")
