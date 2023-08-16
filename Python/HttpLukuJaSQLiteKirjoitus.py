@@ -23,10 +23,16 @@ for käyttäjä in käyttäjät:
     kaupunki = käyttäjä["address"]["city"]
     puhelin = käyttäjä["phone"]
     
+    # Varoitus! Seuraava rivi on SQL Injection -hyökkäykselle altis!
     kursori.execute("INSERT INTO käyttäjät VALUES ('"+nimi+"', '"+kaupunki+"', '"+puhelin+"')")
     print("Lisätty käyttäjä:", nimi)
 
 print("Tallennetaan muutokset tietokantaan.")
 yhteys.commit()
+
+print("Käyttäjätaulun rivimäärä:")
+tulokset = kursori.execute("SELECT COUNT(*) FROM käyttäjät")
+käyttäjällkm = tulokset.fetchall()
+print(käyttäjällkm)
 
 print("Suoritus päättyy.")
