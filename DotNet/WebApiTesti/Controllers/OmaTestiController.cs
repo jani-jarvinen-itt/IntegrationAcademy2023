@@ -1,5 +1,5 @@
-using System.IO;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 
 namespace WebApiTesti.Controllers;
 
@@ -37,6 +37,34 @@ public class OmaTestiController : ControllerBase
                 Kengännumero = int.Parse(osat[1])
             };
             tulokset.Add(henkilö);
+        }
+
+        return tulokset;
+    }
+
+    [Route("sqlluku")]
+    public List<Asiakas> LueAsiakkaatSqlKannasta()
+    {
+        List<Asiakas> tulokset = new();
+
+        string yhteysmerkkijono = "Server=localhost\\SQLEXPRESS;Database=Northwind;Trusted_Connection=true;Encrypt=no;";
+        SqlConnection yhteys = new SqlConnection(yhteysmerkkijono);
+        yhteys.Open();
+
+        string sql = "SELECT CompanyName, ContactName, Country FROM Customers";
+        SqlCommand komento = new(sql, yhteys);
+        SqlDataReader lukija = komento.ExecuteReader();
+
+        while (lukija.Read())
+        {
+            Asiakas asiakas = new()
+            {
+                YritysNimi = lukija["CompanyName"].ToString() ?? "",
+                Yhteyshenkilö = lukija["ContactName"].ToString() ?? "",
+                Maa = lukija["Country"].ToString() ?? ""
+            };
+
+            tulokset.Add(asiakas);
         }
 
         return tulokset;
