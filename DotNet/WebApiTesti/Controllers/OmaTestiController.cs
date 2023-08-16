@@ -20,11 +20,25 @@ public class OmaTestiController : ControllerBase
     }
 
     [Route("csvluku")]
-    public string LueCsvTiedosto()
+    public List<Henkilö> LueCsvTiedosto()
     {
         string tiedostonimi = @"C:\Integration\Koodit\DotNet\WebApiTesti\Henkilöt.csv";
-        string csv = System.IO.File.ReadAllText(tiedostonimi);
+        string[] rivit = System.IO.File.ReadAllLines(tiedostonimi);
 
-        return csv;
+        List<Henkilö> tulokset = new();
+        for (int i = 1; i < rivit.Length; i++)
+        {
+            string rivi = rivit[i];
+
+            string[] osat = rivi.Split(';');
+            Henkilö henkilö = new()
+            {
+                Nimi = osat[0],
+                Kengännumero = int.Parse(osat[1])
+            };
+            tulokset.Add(henkilö);
+        }
+
+        return tulokset;
     }
 }
