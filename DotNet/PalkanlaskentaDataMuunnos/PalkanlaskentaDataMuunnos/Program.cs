@@ -8,6 +8,8 @@ Console.WriteLine("XML-tiedosto ladattu.");
 XmlNode juuri = palkkatiedot.DocumentElement;
 List<PalkkaTietomalli> tulokset = new();
 
+float usdKurssi = 1.1313f;
+
 for (int i = 0; i < juuri.ChildNodes.Count; i++)
 {
     // Console.WriteLine(juuri.ChildNodes[i].InnerText);
@@ -24,7 +26,7 @@ for (int i = 0; i < juuri.ChildNodes.Count; i++)
         personName = nimi,
         salary = new Salary()
         {
-            monthly = float.Parse(palkka)
+            monthly = float.Parse(palkka) * usdKurssi
         }
     });
 }
