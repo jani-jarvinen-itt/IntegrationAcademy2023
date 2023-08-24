@@ -101,3 +101,6 @@ DotNet/WebApiTesti/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlCl
 DotNet/WebApiTesti/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
 DotNet/WebApiTesti/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
 DotNet/WebApiTesti/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/DotNet/PalkanlaskentaDataMuunnos/.vs/PalkanlaskentaDataMuunnos
+/DotNet/PalkanlaskentaDataMuunnos/PalkanlaskentaDataMuunnos/obj
+/DotNet/PalkanlaskentaDataMuunnos/PalkanlaskentaDataMuunnos/bin/Debug/net7.0
