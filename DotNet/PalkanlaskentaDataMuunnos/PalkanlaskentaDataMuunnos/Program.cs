@@ -17,6 +17,11 @@ for (int i = 0; i < juuri.ChildNodes.Count; i++)
     XmlNode lapsi = juuri.ChildNodes[i];
     string palkka = lapsi.ChildNodes[0].InnerText;
     string nimi = lapsi.ChildNodes[1].InnerText;
+    string työsuhde = "";
+    if (lapsi.ChildNodes.Count > 2)
+    {
+        työsuhde = lapsi.ChildNodes[2].InnerText;
+    }
     string henkilöId = lapsi.Attributes["henkilöstöid"]?.Value;
 
     Console.WriteLine($"Nimi: {nimi}, palkka: {palkka}");
@@ -28,7 +33,8 @@ for (int i = 0; i < juuri.ChildNodes.Count; i++)
         salary = new Salary()
         {
             monthly = float.Parse(palkka) * usdKurssi
-        }
+        },
+        hireDate = työsuhde
     });
 }
 
