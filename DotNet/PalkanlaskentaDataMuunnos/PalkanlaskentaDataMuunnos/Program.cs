@@ -1,4 +1,5 @@
 ﻿using PalkanlaskentaDataMuunnos;
+using System.Globalization;
 using System.Xml;
 
 XmlDocument palkkatiedot = new();
@@ -8,7 +9,7 @@ Console.WriteLine("XML-tiedosto ladattu.");
 XmlNode juuri = palkkatiedot.DocumentElement;
 List<PalkkaTietomalli> tulokset = new();
 
-float usdKurssi = 1.1313f;
+float usdKurssi = LueUsdKurssi();
 
 for (int i = 0; i < juuri.ChildNodes.Count; i++)
 {
@@ -38,3 +39,20 @@ Console.WriteLine("----------------");
 
 
 Console.WriteLine("Loppu.");
+
+
+float LueUsdKurssi()
+{
+    XmlDocument valuuttakurssit = new();
+    valuuttakurssit.Load(@"..\..\..\Valuuttakurssi.xml");
+
+    XmlNode juuri = valuuttakurssit.DocumentElement;
+    XmlNode kuutio = juuri.ChildNodes[2].ChildNodes[0].ChildNodes[0];
+
+    string usdKurssi = kuutio.Attributes["rate"].Value;
+    Console.WriteLine("USD-kurssi:");
+    Console.WriteLine(usdKurssi);
+
+    CultureInfo enUs = new("en-US");
+    return float.Parse(usdKurssi, enUs);
+}
