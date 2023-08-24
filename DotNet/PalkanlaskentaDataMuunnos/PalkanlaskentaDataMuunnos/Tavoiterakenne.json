@@ -1,0 +1,15 @@
+[
+  {
+    "personName": "Jaska Jokunen",
+    "salary": {
+      "monthly": 2500.0
+    },
+    "hireDate": "2019-07-01"
+  },
+  {
+    "personName": "Erkki Esimerkki",
+    "salary": {
+      "monthly": 5321.0
+    }
+  }
+]
