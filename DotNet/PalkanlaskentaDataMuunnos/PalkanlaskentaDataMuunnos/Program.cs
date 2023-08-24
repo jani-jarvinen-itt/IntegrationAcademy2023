@@ -11,10 +11,13 @@ List<PalkkaTietomalli> tulokset = new();
 for (int i = 0; i < juuri.ChildNodes.Count; i++)
 {
     // Console.WriteLine(juuri.ChildNodes[i].InnerText);
-    string palkka = juuri.ChildNodes[i].ChildNodes[0].InnerText;
-    string nimi = juuri.ChildNodes[i].ChildNodes[1].InnerText;
+    XmlNode lapsi = juuri.ChildNodes[i];
+    string palkka = lapsi.ChildNodes[0].InnerText;
+    string nimi = lapsi.ChildNodes[1].InnerText;
+    string henkilöId = lapsi.Attributes["henkilöstöid"]?.Value;
 
     Console.WriteLine($"Nimi: {nimi}, palkka: {palkka}");
+    Console.WriteLine($"   Henkilöstö-id: {henkilöId}");
 
     tulokset.Add(new PalkkaTietomalli()
     {
