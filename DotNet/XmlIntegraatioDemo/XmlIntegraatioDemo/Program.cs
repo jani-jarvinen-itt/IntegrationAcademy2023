@@ -4,31 +4,44 @@ using System.Xml.Schema;
 const string SisäänlukuKansio = @"C:\Integration\Demo\Input";
 const string KäsitellytKansio = @"C:\Integration\Demo\Processed";
 const string VirheetKansio = @"C:\Integration\Demo\Errors";
+const int AjastusAika = 30; // sekuntia
 
-string[] tiedostot = Directory.GetFiles(
-    SisäänlukuKansio, "*.xml");
-
-if (tiedostot.Length > 0)
+// ajastus 30 sekunnin välein
+while (true)
 {
-    foreach (string tiedosto in tiedostot)
+    Console.WriteLine("Aloitetaan käsittely.");
+    KäsitteleXmlTiedostot();
+
+    Task.Delay(AjastusAika * 1000).Wait();
+}
+
+void KäsitteleXmlTiedostot()
+{
+    string[] tiedostot = Directory.GetFiles(
+        SisäänlukuKansio, "*.xml");
+
+    if (tiedostot.Length > 0)
     {
-        // XML-validiointi
-        bool ok = ValidioiXmlTiedosto(tiedosto);
-
-        // tiedoston siirto oikeaan kansioon
-        string nimi = Path.GetFileName(tiedosto);
-        if (ok)
+        foreach (string tiedosto in tiedostot)
         {
-            string kohdePolku = Path.Combine(KäsitellytKansio, nimi);
-            File.Move(tiedosto, kohdePolku);
-        }
-        else
-        {
-            string kohdePolku = Path.Combine(VirheetKansio, nimi);
-            File.Move(tiedosto, kohdePolku);
-        }
+            // XML-validiointi
+            bool ok = ValidioiXmlTiedosto(tiedosto);
 
-        Console.WriteLine("Käsitelty tiedosto: " + tiedosto);
+            // tiedoston siirto oikeaan kansioon
+            string nimi = Path.GetFileName(tiedosto);
+            if (ok)
+            {
+                string kohdePolku = Path.Combine(KäsitellytKansio, nimi);
+                File.Move(tiedosto, kohdePolku);
+            }
+            else
+            {
+                string kohdePolku = Path.Combine(VirheetKansio, nimi);
+                File.Move(tiedosto, kohdePolku);
+            }
+
+            Console.WriteLine("Käsitelty tiedosto: " + tiedosto);
+        }
     }
 }
 
