@@ -1,11 +1,12 @@
-﻿using System.Xml.Schema;
-using System.Xml;
+﻿using System.Xml;
+using System.Xml.Schema;
 
 const string SisäänlukuKansio = @"C:\Integration\Demo\Input";
 const string KäsitellytKansio = @"C:\Integration\Demo\Processed";
 const string VirheetKansio = @"C:\Integration\Demo\Errors";
 
-string[] tiedostot = Directory.GetFiles(SisäänlukuKansio, "*.xml");
+string[] tiedostot = Directory.GetFiles(
+    SisäänlukuKansio, "*.xml");
 
 if (tiedostot.Length > 0)
 {
@@ -34,27 +35,36 @@ if (tiedostot.Length > 0)
 bool ValidioiXmlTiedosto(string tiedosto)
 {
     bool tulos = false;
+    XmlReader reader = null;
+    try
+    {
+        XmlReaderSettings settings = new();
+        settings.Schemas.Add(null,
+            @"..\..\..\Kirjat-kaavatiedosto.xsd");
+        settings.ValidationType = ValidationType.Schema;
+        settings.ValidationFlags |= XmlSchemaValidationFlags.ReportValidationWarnings;
 
-    XmlReaderSettings settings = new();
-    settings.Schemas.Add(null,
-        @"..\..\..\Kirjat-kaavatiedosto.xsd");
-    settings.ValidationType = ValidationType.Schema;
-    settings.ValidationFlags |= XmlSchemaValidationFlags.ReportValidationWarnings;
+        reader = XmlReader.Create(tiedosto, settings);
+        XmlDocument document = new();
+        document.Load(reader);
 
-    XmlReader reader = XmlReader.Create(tiedosto, settings);
-    XmlDocument document = new();
-    document.Load(reader);
+        ValidationEventHandler eventHandler = new(ValidationEventHandler);
 
-    ValidationEventHandler eventHandler = new(ValidationEventHandler);
+        // Console.WriteLine("XML-validiointi alkaa.");
+        document.Validate(eventHandler);
+        // Console.WriteLine("XML-validiointi on päättynyt.");
 
-    Console.WriteLine("XML-validiointi alkaa.");
-    document.Validate(eventHandler);
-    Console.WriteLine("XML-validiointi on päättynyt.");
-
-    // suljetaan tiedosto
-    reader.Close();
-
-    tulos = true;
+        tulos = true;
+    }
+    catch (Exception ex)
+    {
+        // TODO: lokitus!
+    }
+    finally
+    {
+        // suljetaan tiedosto
+        reader.Close();
+    }
     return tulos;
 }
 
