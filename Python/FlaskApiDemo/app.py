@@ -23,3 +23,9 @@ def hae_asiakas(asiakasid):
 def kyselyparametrit():
     arvo = request.args.get("asiakasid")
     return f"Asiakas-id:n arvo on: " + str(arvo)
+
+@app.route("/api/haku", methods=["POST"])
+def haku():
+    hakuehdot = request.json
+    print(hakuehdot)
+    return "Hakuehdot olivat: " + str(hakuehdot)
