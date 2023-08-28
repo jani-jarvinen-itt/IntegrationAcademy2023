@@ -15,6 +15,38 @@ def parametrit():
     metodi = request.method
     return f"Tämä pyyntö tehtiin HTTP:n {metodi}-metodilla."
 
+
+
+@app.route("/api/asiakkaat")
+def hae_kaikki_asiakkaat():
+    tiedosto = open("..\\Esimerkki.csv", "r", encoding="utf8")
+    asiakkaat = []
+    rivit = tiedosto.readlines()
+    for rivi in rivit:
+        osat = rivi.split(";")
+        asiakas = {
+            "asiakasId": osat[0],
+            "nimi": osat[1],
+            "osoite": osat[2]
+        }
+        asiakkaat.append(asiakas)
+    tiedosto.close()
+    return asiakkaat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @app.route("/api/asiakas/<int:asiakasid>")
 def hae_asiakas(asiakasid):
     return f"Tässä asiakkaan {asiakasid} tiedot..."
