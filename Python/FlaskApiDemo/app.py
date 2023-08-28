@@ -34,18 +34,21 @@ def hae_kaikki_asiakkaat():
     return asiakkaat
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@app.route("/api/asiakkaat/<int:asiakasid>")
+def hae_asiakas_idnumeron_perusteella(asiakasid):
+    tiedosto = open("..\\Esimerkki.csv", "r", encoding="utf8")
+    rivit = tiedosto.readlines()
+    asiakas = {}
+    for rivi in rivit:
+        osat = rivi.split(";")
+        if int(osat[0]) == asiakasid:
+            asiakas = {
+                "asiakasId": osat[0],
+                "nimi": osat[1],
+                "osoite": osat[2]
+            }
+    tiedosto.close()
+    return asiakas
 
 @app.route("/api/asiakas/<int:asiakasid>")
 def hae_asiakas(asiakasid):
