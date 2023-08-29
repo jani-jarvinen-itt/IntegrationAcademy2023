@@ -123,3 +123,6 @@ DotNet/WebApiTesti/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlCl
 DotNet/XsltMuunnokset/.vs/ProjectEvaluation/xsltmuunnokset.projects.v7.bin
 DotNet/XsltMuunnokset/.vs/ProjectEvaluation/xsltmuunnokset.metadata.v7.bin
 Python/FlaskApiDemo/__pycache__/app.cpython-311.pyc
+/DotNet/WebApiDemo/.vs/WebApiDemo
+/DotNet/WebApiDemo/WebApiDemo/bin/Debug/net7.0
+/DotNet/WebApiDemo/WebApiDemo/obj
