@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApiDemo.Models;
 
 namespace WebApiDemo.Controllers
 {
@@ -11,6 +12,13 @@ namespace WebApiDemo.Controllers
         public string Parametrit(string nimi, int ikä)
         {
             return $"Parametrien arvot: nimi={nimi}, ikä={ikä}.";
+        }
+
+        [HttpPost]
+        [Route("sisältö")]
+        public string Sisältö([FromBody] Henkilö henkilö)
+        {
+            return $"Syötteen arvot: nimi={henkilö.Nimi}, ikä={henkilö.Ikä}.";
         }
     }
 }
