@@ -126,3 +126,17 @@ Python/FlaskApiDemo/__pycache__/app.cpython-311.pyc
 /DotNet/WebApiDemo/.vs/WebApiDemo
 /DotNet/WebApiDemo/WebApiDemo/bin/Debug/net7.0
 /DotNet/WebApiDemo/WebApiDemo/obj
+DotNet/EntityFrameworkWebApi/.vscode/launch.json
+DotNet/EntityFrameworkWebApi/.vscode/tasks.json
+DotNet/EntityFrameworkWebApi/obj/EntityFrameworkWebApi.csproj.nuget.dgspec.json
+DotNet/EntityFrameworkWebApi/obj/EntityFrameworkWebApi.csproj.nuget.g.props
+DotNet/EntityFrameworkWebApi/obj/EntityFrameworkWebApi.csproj.nuget.g.targets
+DotNet/EntityFrameworkWebApi/obj/project.assets.json
+DotNet/EntityFrameworkWebApi/obj/project.nuget.cache
+DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.AssemblyInfo.cs
+DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.AssemblyInfoInputs.cache
+DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.assets.cache
+DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.csproj.AssemblyReference.cache
+DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.GeneratedMSBuildEditorConfig.editorconfig
+DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.GlobalUsings.g.cs
