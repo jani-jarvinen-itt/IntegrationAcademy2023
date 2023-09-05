@@ -140,3 +140,5 @@ DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.assets.cache
 DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.csproj.AssemblyReference.cache
 DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.GeneratedMSBuildEditorConfig.editorconfig
 DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.GlobalUsings.g.cs
+/DotNet/EntityFrameworkWebApi/bin/Debug/net7.0
+/DotNet/EntityFrameworkWebApi/obj
