@@ -1,0 +1,1 @@
+{"HostId":"30a1a16e-9d83-f593-43aa-6b1cc2292c56","Endpoint":"ClientUI","StartedAt":"2023-09-05T08:44:19.8068499Z","HostProperties":{"Machine":"ZIRCON2","ProcessID":"39276","UserName":"Koulutus","PathToExecutable":"C:\\Integration\\Koodit\\DotNet\\NServiceBus\\RetailDemo\\ClientUI\\bin\\Debug\\net6.0\\ClientUI.dll"},"HostDisplayName":"ZIRCON2","Host":"ZIRCON2"}

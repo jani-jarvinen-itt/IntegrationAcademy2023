@@ -1,0 +1,39 @@
+2023-09-05 10:45:50.5339|1|Info|LoggingConfiguration|Logging to C:\Integration\Koodit\DotNet\NServiceBus\AlustaDemo\.logs\servicecontrol-audit\logfile.2023-09-05.txt with LogLevel 'Info'
+2023-09-05 10:45:50.6237|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2023-09-05 10:45:52.1393|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2023-09-05 10:45:52.2511|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       4.32.2+02388c6fff44fd9eb48bf9c36de0db14589e02c3
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+Database Size:                       b
+Database Folder Size:                b
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Transport Customization:            ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning,
+Persistence Customization:          ServiceControl.Audit.Persistence.InMemory.InMemoryPersistenceConfiguration, ServiceControl.Audit.Persistence.InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2023-09-05 10:45:52.2937|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for LearningTransport
+2023-09-05 10:45:55.2403|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2023-09-05 10:45:55.3839|8|Warn|ServiceControl.Audit.Infrastructure.CheckFreeDiskSpace|19 % disk space remaining on data drive 'WIN-1TB (C:\)' on 'ZIRCON2'.
+2023-09-05 10:45:55.3914|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Ensure started. Infrastructure starting
+2023-09-05 10:45:55.4049|11|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2023-09-05 10:45:55.4049|11|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2023-09-05 10:45:55.4388|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Ensure started. Infrastructure started
+2023-09-05 10:45:55.5142|7|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-09-05 10:45:55.5142|7|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-09-05 10:45:55.5142|7|Info|Microsoft.Hosting.Lifetime|Content root path: C:\Integration\Koodit\DotNet\NServiceBus\AlustaDemo\bin\Debug\net7.0\platform\servicecontrol\servicecontrol-audit-instance\
+2023-09-05 10:50:55.4439|15|Warn|ServiceControl.Audit.Infrastructure.CheckFreeDiskSpace|19 % disk space remaining on data drive 'WIN-1TB (C:\)' on 'ZIRCON2'.
+2023-09-05 10:55:55.4563|10|Warn|ServiceControl.Audit.Infrastructure.CheckFreeDiskSpace|19 % disk space remaining on data drive 'WIN-1TB (C:\)' on 'ZIRCON2'.
+2023-09-05 10:56:28.9522|11|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-09-05 10:56:28.9673|16|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore acquiring
+2023-09-05 10:56:28.9673|16|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore acquired
+2023-09-05 10:56:28.9673|16|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Infrastructure shut down commencing
+2023-09-05 10:56:28.9673|16|Info|NServiceBus.Raw.RunningRawEndpointInstance|Stopping receiver.
+2023-09-05 10:56:28.9874|16|Info|NServiceBus.Raw.RunningRawEndpointInstance|Receiver stopped.
+2023-09-05 10:56:28.9874|16|Info|NServiceBus.Raw.StoppableRawEndpoint|Initiating shutdown.
+2023-09-05 10:56:28.9874|16|Info|NServiceBus.Raw.StoppableRawEndpoint|Shutdown complete.
+2023-09-05 10:56:28.9874|16|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Infrastructure shut down completed
+2023-09-05 10:56:28.9874|16|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore releasing
+2023-09-05 10:56:28.9874|16|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore released

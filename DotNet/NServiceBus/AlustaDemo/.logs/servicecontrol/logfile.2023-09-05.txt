@@ -1,0 +1,52 @@
+2023-09-05 10:45:50.0771|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2023-09-05 10:45:51.7592|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             4.32.2+02388c6fff44fd9eb48bf9c36de0db14589e02c3
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+Database Size:                      -1 B
+Database Folder Size:                b
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2023-09-05 10:45:52.2155|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for LearningTransport
+2023-09-05 10:45:53.6782|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2023-09-05 10:46:12.5786|12|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2023-09-05 10:46:12.5786|12|Info|ServiceControl.Infrastructure.RavenDB.EmbeddedRavenDbHostedService|Initializing RavenDB instance
+2023-09-05 10:46:12.5786|12|Info|ServiceControl.Infrastructure.RavenDB.EmbeddedRavenDbHostedService|Creating indexes if not present.
+2023-09-05 10:46:12.5786|12|Info|ServiceControl.Infrastructure.RavenDB.EmbeddedRavenDbHostedService|Testing indexes
+2023-09-05 10:46:12.5786|12|Info|ServiceControl.Infrastructure.RavenDB.EmbeddedRavenDbHostedService|Executing data migrations
+2023-09-05 10:46:12.5786|12|Info|ServiceControl.Infrastructure.RavenDB.Expiration.ExpiredDocumentsCleanerBundle|Running deletion of expired documents every 600 seconds
+2023-09-05 10:46:12.5786|12|Info|ServiceControl.Infrastructure.RavenDB.Expiration.ExpiredDocumentsCleanerBundle|Deletion batch size set to 65512
+2023-09-05 10:46:12.5786|12|Info|ServiceControl.Infrastructure.RavenDB.Expiration.ExpiredDocumentsCleanerBundle|Retention period for errors is 10.00:00:00
+2023-09-05 10:46:13.1199|11|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2023-09-05 10:46:13.2634|11|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-09-05 10:46:13.2789|11|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-09-05 10:46:13.2945|61|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.2945|43|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.2945|6|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.2945|10|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.2945|41|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.2945|8|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.2945|11|Info|Microsoft.Hosting.Lifetime|Content root path: C:\Integration\Koodit\DotNet\NServiceBus\AlustaDemo\bin\Debug\net7.0\platform\servicecontrol\servicecontrol-instance\
+2023-09-05 10:46:13.3100|61|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.3416|61|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.3576|61|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.3732|42|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2023-09-05 10:46:13.3732|42|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2023-09-05 10:46:13.3732|12|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.4038|12|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2023-09-05 10:46:13.4038|8|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:46:13.4038|42|Info|ServiceControl.Operations.ErrorIngestion|Ensure started. Infrastructure started
+2023-09-05 10:46:13.4395|8|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2023-09-05 10:48:13.4092|80|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2023-09-05 10:56:28.9522|73|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-09-05 10:56:28.9723|70|Info|NServiceBus.Raw.RunningRawEndpointInstance|Stopping receiver.
+2023-09-05 10:56:28.9723|70|Info|NServiceBus.Raw.RunningRawEndpointInstance|Receiver stopped.
+2023-09-05 10:56:28.9824|70|Info|NServiceBus.Raw.StoppableRawEndpoint|Initiating shutdown.
+2023-09-05 10:56:28.9824|70|Info|NServiceBus.Raw.StoppableRawEndpoint|Shutdown complete.
+2023-09-05 10:56:29.0639|79|Info|NServiceBus.RunningEndpointInstance|Initiating shutdown.
+2023-09-05 10:56:29.0639|79|Info|NServiceBus.RunningEndpointInstance|Shutdown complete.

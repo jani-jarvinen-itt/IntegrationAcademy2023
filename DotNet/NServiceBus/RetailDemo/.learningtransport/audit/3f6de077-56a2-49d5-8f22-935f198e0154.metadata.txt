@@ -1,0 +1,21 @@
+{
+  "NServiceBus.MessageId": "0f65829e-99e0-4865-b424-b07400a6a504",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.ConversationId": "50ca0961-f6c3-4f81-b722-b07400a6a506",
+  "NServiceBus.CorrelationId": "0f65829e-99e0-4865-b424-b07400a6a504",
+  "NServiceBus.ReplyToAddress": "ClientUI",
+  "NServiceBus.OriginatingMachine": "ZIRCON2",
+  "NServiceBus.OriginatingEndpoint": "ClientUI",
+  "$.diagnostics.originating.hostid": "30a1a16e9d83f59343aa6b1cc2292c56",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "Messages.PlaceOrder, Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "8.1.2",
+  "NServiceBus.TimeSent": "2023-09-05 10:06:44:094753 Z",
+  "traceparent": "00-99d690b5d90c27b2c6692008021f0468-4c46affe037a88ca-00",
+  "NServiceBus.ProcessingStarted": "2023-09-05 10:06:44:142642 Z",
+  "NServiceBus.ProcessingEnded": "2023-09-05 10:06:44:261981 Z",
+  "$.diagnostics.hostid": "9a9939fd2ac63f67524735d76e8b3fca",
+  "$.diagnostics.hostdisplayname": "ZIRCON2",
+  "NServiceBus.ProcessingMachine": "ZIRCON2",
+  "NServiceBus.ProcessingEndpoint": "Sales"
+}

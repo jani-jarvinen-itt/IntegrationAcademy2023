@@ -1,0 +1,9 @@
+{
+  "NServiceBus.OriginatingEndpoint": "Sales",
+  "NServiceBus.OriginatingMachine": "ZIRCON2",
+  "$.diagnostics.originating.hostid": "9a9939fd2ac63f67524735d76e8b3fca",
+  "$.diagnostics.hostdisplayname": "ZIRCON2",
+  "NServiceBus.EnclosedMessageTypes": "NServiceBus.Metrics.EndpointMetadataReport",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.Transport.Learning.TimeToBeReceived": "7.00:00:00"
+}

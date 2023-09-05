@@ -1,0 +1,1 @@
+{"HostId":"9a9939fd-2ac6-3f67-5247-35d76e8b3fca","Endpoint":"Sales","StartedAt":"2023-09-05T08:44:19.5022084Z","HostProperties":{"Machine":"ZIRCON2","ProcessID":"29540","UserName":"Koulutus","PathToExecutable":"C:\\Integration\\Koodit\\DotNet\\NServiceBus\\RetailDemo\\Sales\\bin\\Debug\\net6.0\\Sales.dll"},"HostDisplayName":"ZIRCON2","Host":"ZIRCON2"}
