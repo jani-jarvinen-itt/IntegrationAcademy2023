@@ -16,6 +16,9 @@ namespace Sales
         {
             log.Info($"Received PlaceOrder, OrderId = {message.OrderId}");
 
+            log.Info($"Asiakkaan nimi on: {message.CustomerName}.");
+            log.Info($"Tilauksen summa on: {message.OrderAmount}.");
+
             // This is normally where some business logic would occur
 
             #region ThrowTransientException

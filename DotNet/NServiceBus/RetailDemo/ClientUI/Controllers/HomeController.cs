@@ -41,7 +41,11 @@ namespace ClientUI.Controllers
         {
             string orderId = Guid.NewGuid().ToString().Substring(0, 8);
 
-            var command = new PlaceOrder { OrderId = orderId };
+            var command = new PlaceOrder {
+                OrderId = orderId,
+                CustomerName = "Asiakas Oy",
+                OrderAmount = 1234.56f
+            };
 
             // Send the command
             await _messageSession.Send(command)
