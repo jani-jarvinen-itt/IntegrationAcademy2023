@@ -25,6 +25,7 @@ namespace ClientUI
 
                             var routing = transport.Routing();
                             routing.RouteToEndpoint(typeof(PlaceOrder), "Sales");
+                            routing.RouteToEndpoint(typeof(OmaKomento), "Billing");
 
                             endpointConfiguration.SendFailedMessagesTo("error");
                             endpointConfiguration.AuditProcessedMessagesTo("audit");

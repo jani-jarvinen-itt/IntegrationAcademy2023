@@ -53,6 +53,14 @@ namespace ClientUI.Controllers
 
             _log.LogInformation($"Sending PlaceOrder, OrderId = {orderId}");
 
+            // oman komennon lähetys
+            await _messageSession.Send(new OmaKomento()
+            {
+                Ominaisuus1 = "ABCD",
+                Ominaisuus2 = "XYZ"
+            }).ConfigureAwait(false);
+            _log.LogInformation("Oma komento lähetetty.");
+
             dynamic model = new ExpandoObject();
             model.OrderId = orderId;
             model.MessagesSent = Interlocked.Increment(ref messagesSent);
