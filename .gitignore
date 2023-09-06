@@ -158,3 +158,6 @@ DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.GlobalUsings
 /DotNet/NServiceBus/RetailDemo/Platform/obj
 /DotNet/NServiceBus/RetailDemo/Sales/bin/Debug/net6.0
 /DotNet/NServiceBus/RetailDemo/Sales/obj
+/DotNet/AzureBlobDemo/.vs/AzureBlobDemo
+/DotNet/AzureBlobDemo/AzureBlobDemo/bin/Debug/net7.0
+/DotNet/AzureBlobDemo/AzureBlobDemo/obj
