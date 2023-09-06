@@ -1,0 +1,1 @@
+{"Ominaisuus1":"ABCD","Ominaisuus2":"XYZ"}
