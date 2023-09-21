@@ -165,3 +165,7 @@ DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.GlobalUsings
 /DotNet/NServiceBus/RetailDemo/.vs/ProjectEvaluation
 /DotNet/AzureBlobDemo/.vs/ProjectEvaluation
 /DotNet/AzureFunctionAppDemo/.vs/AzureFunctionAppDemo
+/DotNet/AzureFunctionAppDemo/.vs/ProjectEvaluation
+/DotNet/CosmosDbDemo/.vs/CosmosGettingStarted
+/DotNet/CosmosDbDemo/CosmosGettingStartedTutorial/bin/Debug/netcoreapp3.1
+/DotNet/CosmosDbDemo/CosmosGettingStartedTutorial/obj
