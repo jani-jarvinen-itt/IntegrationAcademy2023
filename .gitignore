@@ -169,3 +169,6 @@ DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.GlobalUsings
 /DotNet/CosmosDbDemo/.vs/CosmosGettingStarted
 /DotNet/CosmosDbDemo/CosmosGettingStartedTutorial/bin/Debug/netcoreapp3.1
 /DotNet/CosmosDbDemo/CosmosGettingStartedTutorial/obj
+/DotNet/CosmosDbDemo/.vs/ProjectEvaluation
+/DotNet/EntityFrameworkWebApi/.vs/EntityFrameworkWebApi
+/DotNet/EntityFrameworkWebApi/EntityFrameworkWebApi.csproj.user
