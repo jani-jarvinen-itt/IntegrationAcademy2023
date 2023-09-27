@@ -11,8 +11,8 @@ Console.WriteLine(luku);
 int summa = laskeSumma(1, 2);
 Console.WriteLine(summa);
 
-summa = laskeSumma(1);
-Console.WriteLine(summa);
+// summa = laskeSumma(1);
+// Console.WriteLine(summa);
 
 int laskeSumma(int a, int b)
 {
