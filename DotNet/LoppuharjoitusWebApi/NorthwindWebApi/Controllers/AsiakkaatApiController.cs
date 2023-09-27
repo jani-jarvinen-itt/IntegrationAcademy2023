@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NorthwindWebApi.Entities;
 
 namespace NorthwindWebApi.Controllers
 {
@@ -9,9 +10,13 @@ namespace NorthwindWebApi.Controllers
     {
         [HttpGet]
         [Route("{asiakasId}")]
-        public string TilausNumerolla(string asiakasId)
+        public Customer? AsiakasIdllä(string asiakasId)
         {
-            return $"Asiakkaan {asiakasId} tiedot..";
+            NorthwindContext konteksti = new();
+            Customer? asiakas = konteksti.Customers.Where(
+                c => c.CustomerId == asiakasId).FirstOrDefault();
+
+            return asiakas;
         }
     }
 }
