@@ -180,3 +180,7 @@ DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.GlobalUsings
 /DotNet/HelloWorld/bin/Debug/net7.0
 /DotNet/HelloWorld/obj
 /DotNet/HelloWorld/.vs/HelloWorld/v17
+/DotNet/HelloWorld/.vs
+/DotNet/LoppuharjoitusWebApi/.vs/LoppuharjoitusWebApi
+/DotNet/LoppuharjoitusWebApi/NorthwindWebApi/bin/Debug/net7.0
+/DotNet/LoppuharjoitusWebApi/NorthwindWebApi/obj
