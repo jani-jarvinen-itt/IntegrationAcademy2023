@@ -1,0 +1,3 @@
+SQL-tietokannan entity-mallin perustaminen:
+
+Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;Encrypt=No;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities
