@@ -172,3 +172,10 @@ DotNet/EntityFrameworkWebApi/obj/Debug/net7.0/EntityFrameworkWebApi.GlobalUsings
 /DotNet/CosmosDbDemo/.vs/ProjectEvaluation
 /DotNet/EntityFrameworkWebApi/.vs/EntityFrameworkWebApi
 /DotNet/EntityFrameworkWebApi/EntityFrameworkWebApi.csproj.user
+/Docker/python-docker/.venv
+/Docker/python-docker/__pycache__
+/DotNet/AzureFunctionAppDemo/AzureFunctionAppDemo/Properties/PublishProfiles
+/DotNet/AzureFunctionAppDemo/AzureFunctionAppDemo/Properties/ServiceDependencies/integrationacademy2023b - Zip Deploy
+/DotNet/EntityFrameworkWebApi/.vs/ProjectEvaluation
+/DotNet/HelloWorld/bin/Debug/net7.0
+/DotNet/HelloWorld/obj
