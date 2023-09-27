@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindWebApi", "NorthwindWebApi\NorthwindWebApi.csproj", "{B85F2104-F8B6-4F70-96BE-8CB8E0ABC070}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlLukuTesti", "XmlLukuTesti\XmlLukuTesti.csproj", "{65A9C145-7E2F-4B9E-9B2C-E46B228CC3D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B85F2104-F8B6-4F70-96BE-8CB8E0ABC070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B85F2104-F8B6-4F70-96BE-8CB8E0ABC070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B85F2104-F8B6-4F70-96BE-8CB8E0ABC070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A9C145-7E2F-4B9E-9B2C-E46B228CC3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A9C145-7E2F-4B9E-9B2C-E46B228CC3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A9C145-7E2F-4B9E-9B2C-E46B228CC3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A9C145-7E2F-4B9E-9B2C-E46B228CC3D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
