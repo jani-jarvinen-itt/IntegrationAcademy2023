@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<NorthwindComplement>
+    <Customers>
+        <Customer>
+            <CustomerID>ALFKI</CustomerID>
+            <SocialMedia>
+                <Twitter>@alfkiTwitter</Twitter>
+                <Instagram>@alfkiInsta</Instagram>
+            </SocialMedia>
+            <LoyaltyProgram>Tier2</LoyaltyProgram>
+        </Customer>
+        <Customer>
+            <CustomerID>ANATR</CustomerID>
+            <SocialMedia>
+                <Twitter>@anatrTwitter</Twitter>
+                <Instagram>@anatrInsta</Instagram>
+            </SocialMedia>
+            <LoyaltyProgram>Tier1</LoyaltyProgram>
+        </Customer>
+        <Customer>
+            <CustomerID>ANTON</CustomerID>
+            <SocialMedia>
+                <Twitter>@antonTwitter</Twitter>
+                <Instagram>@antonInsta</Instagram>
+            </SocialMedia>
+            <LoyaltyProgram>Tier3</LoyaltyProgram>
+        </Customer>
+    </Customers>
+
+    <Orders>
+		    <Order>
+		        <OrderID>10248</OrderID>
+		        <SpecialInstructions>Leave at the front door if no one's home.</SpecialInstructions>
+		    </Order>
+		    <Order>
+		        <OrderID>10249</OrderID>
+		        <SpecialInstructions>Deliver before 5 pm.</SpecialInstructions>
+		    </Order>
+		    <Order>
+		        <OrderID>10250</OrderID>
+		        <SpecialInstructions>Requires signature upon delivery.</SpecialInstructions>
+		    </Order>
+		    <Order>
+		        <OrderID>10251</OrderID>
+		        <SpecialInstructions>Include gift wrapping.</SpecialInstructions>
+		    </Order>
+		    <Order>
+		        <OrderID>10252</OrderID>
+		        <SpecialInstructions>Don't ring the doorbell. Call upon arrival.</SpecialInstructions>
+		    </Order>
+		    <Order>
+		        <OrderID>10253</OrderID>
+		        <SpecialInstructions>Leave package with the receptionist.</SpecialInstructions>
+		    </Order>
+		</Orders>
+</NorthwindComplement>
