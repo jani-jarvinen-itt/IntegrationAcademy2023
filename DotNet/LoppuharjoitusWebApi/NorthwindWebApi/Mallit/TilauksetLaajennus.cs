@@ -2,9 +2,9 @@
 
 namespace NorthwindWebApi.Entities
 {
-    public partial class Customer
+    public partial class Order
     {
         [NotMapped]
-        public string? InstagramTunnus { get; set; }
+        public string KäsittelyOhjeet { get; set; }
     }
 }

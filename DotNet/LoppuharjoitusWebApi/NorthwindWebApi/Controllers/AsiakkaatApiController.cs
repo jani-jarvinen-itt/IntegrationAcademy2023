@@ -11,7 +11,7 @@ namespace NorthwindWebApi.Controllers
     {
         [HttpGet]
         [Route("{asiakasId}")]
-        public CustomerLaajennus? AsiakasIdllä(string asiakasId)
+        public Customer? AsiakasIdllä(string asiakasId)
         {
             // SQL-tietokannan käsittely
             NorthwindContext konteksti = new();
@@ -23,17 +23,10 @@ namespace NorthwindWebApi.Controllers
             if (asiakas != null)
             {
                 string igTunnus = xml.HaeAsiakkaanLisätiedot(asiakasId);
-                CustomerLaajennus asiakas2 = new()
-                {
-                    InstagramTunnus = igTunnus,
-                    CustomerId = asiakas.CustomerId,
-                    CompanyName = asiakas.CompanyName,
-                    Country = asiakas.Country,
-                    ContactName = asiakas.ContactName
-                };
+                asiakas.InstagramTunnus = igTunnus;
 
                 // palautetaan tulokset
-                return asiakas2;
+                return asiakas;
             }
             else
             {
